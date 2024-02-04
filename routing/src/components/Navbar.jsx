@@ -1,18 +1,26 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import "../App.css"
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <>
-        <div className='navbar'>
-            <Link style={{textDecoration:"none",color:"white"}} to={"./"}><h1>SAK❤️</h1></Link>
-            <div className='links'>
-                <Link style={{textDecoration:"none",color:"white"}} to={"./About"}><h3>About</h3></Link>
-                <Link style={{textDecoration:"none",color:"white"}} to={"./Contact"}><h3>Contact</h3></Link>
-            </div>
+    <div className='Nav-Bar' >
+      <Link to={"/"} >
+        <div  style={{width:"100%",display:"flex",alignItems:"center",justifyContent:"space-around",fontSize:"20px"}} >
+          <h1 style={{paddingLeft:"30px"}} >Kalvium</h1>
+          <img style={{paddingLeft:"30px"}} src="https://kalvium.community/images/sidebar-3d-logo.svg" alt="" />
         </div>
-    </>
+      </Link>
+      <div style={{width:"20%",display:"flex",alignItems:"center",padding:"10px",justifyContent:"space-around"}} >
+        <Link to={"/About"} >
+          <h1>About</h1>        
+        </Link>
+
+        <Link to={"/Contact"} >
+          <h1>Contact</h1>  
+        </Link>
+      </div>
+    </div>
   )
 }
 

@@ -1,14 +1,22 @@
-import './App.css'
-import AllRoutes from './components/AllRoutes'
+import React from 'react'
+import "./index.css"
 import Navbar from './components/Navbar'
+import AllRoutes from './components/Routes/AllRoutes'
 
-function App() {
 
+const App = () => {
   return (
-    <>
-      <Navbar />
-      <AllRoutes />
-    </>
+    <div>
+      <div>
+        <Navbar/> 
+      </div>
+
+      <div >
+        <AllRoutes/>
+      </div>
+
+      {/* Perform Routing */}
+    </div>
   )
 }
 

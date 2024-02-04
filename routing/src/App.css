@@ -1,12 +1,4 @@
-.navbar,.links{
+.Nav-Bar{
   display: flex;
-  padding: 0 2vw;
   justify-content: space-between;
-  background-color: black;
-  border-radius: 1vw;
-  align-items: center;
-}
-
-.links{
-  width: 10vw;
 }
